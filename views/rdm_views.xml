@@ -24,7 +24,7 @@
 
                     <group string="Información de Solicitud">
                         <group string="Fechas">
-                            <field name="fecha_solicitud"/>
+                            <field name="fecha_solicitud" readonly="1"/>
                             <field name="fecha_requerida"/>
                             <field name="prioridad"/>
                         </group>
@@ -33,7 +33,7 @@
                           
                         </group>
                         <group string="Autorizaciones">
-                            <field name="solicitante_id"/>
+                            <field name="solicitante_id" readonly="1"/>
                             <field name="autorizado"/>
                         </group>
                     </group>
@@ -101,7 +101,7 @@
         <field name="arch" type="xml">
             <kanban class="o_kanban_small_column">
                 <field name="name"/>
-                <field name="fecha_solicitud"/>
+                <field name="fecha_solicitud" />
                 <field name="fecha_requerida"/>
                 <field name="almacen_id"/>
                 <field name="estado"/>
